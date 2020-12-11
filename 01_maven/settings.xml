@@ -1,0 +1,30 @@
+<settings>
+
+<mirrors>
+
+
+
+<mirror>
+<id>mirror-nexus</id>
+<mirrorOf>*</mirrorOf>
+<name>my-nexus</name>
+<url>http://localhost:8081/repository/maven-public/</url>
+</mirror>
+
+
+</mirrors>
+
+
+<servers>
+	<server>
+		<id>nexus-releases</id>
+		<username>deployment</username>
+		<password>deployment123</password>
+	</server>
+	<server>
+		<id>nexus-snapshots</id>
+		<username>deployment</username>
+		<password>deployment123</password>
+	</server>
+</servers>
+</settings>

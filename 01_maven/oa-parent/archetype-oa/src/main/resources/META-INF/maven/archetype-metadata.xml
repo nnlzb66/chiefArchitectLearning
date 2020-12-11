@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="archetype-oa">
+	<fileSets>
+		<fileSet filtered="true" packaged="true">
+			<directory>src/main/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		
+		<fileSet filtered="true" packaged="true">
+			<directory>src/test/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		
+		<fileSet filtered="true" packaged="false">
+			<directory>src/main/resources</directory>
+			<includes>
+				<include>**/*.properties</include>
+				<include>**/*.xml</include>
+			</includes>
+		</fileSet>
+		
+		<fileSet filtered="true" packaged="false">
+			<directory>src/main/profiles/dev</directory>
+			<includes>
+				<include>**/*.properties</include>
+				<include>**/*.xml</include>
+			</includes>
+		</fileSet>
+		
+		<fileSet filtered="true" packaged="false">
+			<directory>src/main/profiles/beta</directory>
+			<includes>
+				<include>**/*.properties</include>
+				<include>**/*.xml</include>
+			</includes>
+		</fileSet>
+		
+		<fileSet filtered="true" packaged="false">
+			<directory>src/main/profiles/test</directory>
+			<includes>
+				<include>**/*.properties</include>
+				<include>**/*.xml</include>
+			</includes>
+		</fileSet>
+		
+		<fileSet filtered="true" packaged="false">
+			<directory>src/main/profiles/staging</directory>
+			<includes>
+				<include>**/*.properties</include>
+				<include>**/*.xml</include>
+			</includes>
+		</fileSet>
+		
+		<fileSet filtered="true" packaged="false">
+			<directory>src/main/profiles/prod</directory>
+			<includes>
+				<include>**/*.properties</include>
+				<include>**/*.xml</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+	
+	<requiredProperties>
+		<requiredProperty key="oaParentVersion" />
+		<requiredProperty key="shortName" /> 
+	</requiredProperties>
+</archetype-descriptor>
